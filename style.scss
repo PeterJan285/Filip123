@@ -1,0 +1,318 @@
+@import 'globals.scss';
+
+
+
+
+
+
+
+// ========== FILIP ===============
+
+.sub-menu {
+    background-color: pink;
+    position: absolute;
+    top: 13%;
+    left: 44%;
+    width: 10rem;
+    padding: 1rem;
+    border-radius: 5px;
+    line-height: 2rem;
+    display: block;
+}
+
+// ========== FILIP ===============
+
+
+
+
+nav {
+    display: flex;
+    align-items: center; 
+    justify-content: space-around; 
+    padding: 3rem 0;
+}
+
+/* ======== NAV PART LEFT ========== */
+.nav__left {
+    display: flex;
+    color: var(--light-gray-text);
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+
+
+     ul {
+        display: flex;
+        align-items: center;
+        margin: 0 3rem;
+        gap: 1.5rem;
+
+        a {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--white);
+
+
+        }
+    }
+}
+
+
+
+/* ======== NAV PART RIGHT ========== */
+.nav__right {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    gap: 0.5rem;
+    
+    @media (max-width: 768px) {
+        display: none;
+    }
+
+    & a:first-child {
+        color: var(--light-gray-text);
+        padding: 12px 20px;   
+    }
+
+    & a:last-child {
+        padding: 12px 30px;
+        background: white;
+        border-radius: 30px;
+        color: var(--light-red-text);
+        transition: 0.2s ease;
+
+        &:hover {
+        color: var(--white);
+        background: var(--very-light-red-text)
+        }
+    }
+}
+
+
+// =====================================
+// ========= CALL TO ACTION ============
+
+.call__to__action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    h1 {
+        color: white;
+        font-weight: 400;
+        font-size: 2.5rem;
+    }
+
+    p {
+        color: var(--light-gray-text);
+    }
+
+    &__btn {
+        font-weight: 500;
+        margin-top: 1rem;
+        display: flex;
+        gap: 1rem;
+
+        a:first-child {
+            background: var(--white);
+            padding: 13px 15px;
+            border-radius: 30px;
+            color: var(--light-red-text);
+            transition: 0.2s ease;
+
+            &:hover {
+                color: var(--white);
+                background: var(--very-light-red-text)
+            }
+        }
+
+        a:last-child {
+            padding: 13px 15px;
+            border-radius: 30px;
+            border: 1px white solid;
+            color: white;
+            transition: 0.2s ease;
+
+            &:hover {
+                background: var(--white);
+                color: var(--light-red-text);
+            }
+        }
+    }
+}
+
+
+/* ========= SECTION 1 ======================= */
+.S1__container {
+    margin: 7rem 0 13rem 0;
+ 
+    > p {
+        // doesnt work why ?
+        text-align: center;
+        font-size: 2.3rem;
+        color: var(--very-dark-blue);
+        margin-bottom: 5rem;
+        font-weight: 500;
+    }
+}
+
+
+
+.S1 {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+
+    &__text {
+        margin-left: 8%;
+        display: flex;
+        flex-direction: column;
+        gap: 2.3rem;
+
+        h2 {
+            color: var(--very-dark-blue);
+            font-weight: 500;
+            font-size: 1.6rem;
+        }
+
+        p {
+            line-height: 1.7rem;
+            color: var(--very-dark-blue);
+            font-size: 1.1rem;
+        }
+    } 
+}
+
+
+
+/* ========= SECTION 2 ======================= */
+.S2__container {
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+    background: linear-gradient(to right, var(--very-dark-gray-blue), var(--very-dark-desaturated-blue));
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* margin-top: 272px; */
+    border-radius: 0 80px 0 80px;
+    height: 400px;
+
+    &__img {
+        position: relative;
+        top: 6%;
+        margin-left: 7%;
+    }
+}
+
+
+.S2__text {
+    margin-right: 10%;
+    color: var(--white);
+    width: 40%;
+
+    & h3 {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    
+     & p {
+        color: lightgray;
+        margin-top: 1.7rem;
+        line-height: 1.5rem;
+    }
+}
+
+
+/* ========= SECTION 3 ======================= */
+.S3__container {
+    margin: 10rem 0;
+    display: flex;
+}
+
+
+.S3 {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+
+    &__img {
+        position: relative;
+        left: -5%;
+    }
+
+    &__text {
+        margin-right: 8%;
+        display: flex;
+        flex-direction: column;
+        gap: 2.3rem;
+
+        & h2 {
+            color: var(--very-dark-blue);
+            font-weight: 500;
+            font-size: 1.6rem;
+        }
+
+        & p {
+            line-height: 1.7rem;
+            color: var(--very-dark-blue);
+            font-size: 1.1rem;
+        }
+    }
+}
+
+
+// footer
+
+footer {
+    background-color: var(--very-dark-black-blue);
+    padding: 7%;
+    padding-left: 10%;
+    background-color: var(--very-dark-black-blue);
+    display: flex;
+    justify-content: center;
+    border-radius: 0 80px 0 0;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 10%;
+    }
+
+    p {
+        color: var(--white);
+        margin-bottom: 0.7rem;
+        font-size: 1.1rem;
+
+        @media (max-width: 768px) {
+            margin-top: 3rem;
+        }
+    }
+
+    a {
+        color: lightgray;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.F1, .F2, .F3, .F4 {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    gap: 0.7rem;
+}
+
+.F1 img {
+    width: 100px;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
